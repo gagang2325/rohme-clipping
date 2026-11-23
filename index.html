@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rohme Clipping — Turn Live Streams into YouTube Shorts Automatically</title>
+<meta name="description" content="Rohme Clipping turns live streams into vertical YouTube Shorts automatically. AI picks the best moments, cuts them in sharp 2K and uploads them to YouTube on schedule.">
+<meta name="author" content="Rohme Gaming">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://gagang2325.github.io/rohme-clipping/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rohme Clipping">
+<meta property="og:title" content="Rohme Clipping — Turn Live Streams into YouTube Shorts Automatically">
+<meta property="og:description" content="Paste a link, go live, or upload a video. AI finds the best moments, cuts them in sharp 2K and uploads them to YouTube on schedule.">
+<meta property="og:url" content="https://gagang2325.github.io/rohme-clipping/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Rohme Clipping — Turn Live Streams into YouTube Shorts Automatically">
+<meta name="twitter:description" content="Paste a link, go live, or upload a video. AI finds the best moments, cuts them in sharp 2K and uploads them to YouTube on schedule.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Rohme Clipping",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Windows 10, Windows 11",
+  "softwareVersion": "2.0.14",
+  "author": { "@type": "Organization", "name": "Rohme Gaming", "url": "https://www.youtube.com/@RohmeGaming" },
+  "description": "Turn live streams and videos into vertical YouTube Shorts automatically. AI picks the best moments, cuts them in sharp 2K and uploads them to YouTube on schedule.",
+  "downloadUrl": "https://drive.google.com/file/d/1APDTBYrDNfBwHrc09JbK6YEnEQ6BDrDg/view?usp=drivesdk",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR", "description": "Free during launch" }
+}
+</script>
+<style>
+  :root {
+    --bg: #FAF6EF;
+    --card: #FFFFFF;
+    --border: #EAE2D5;
+    --text: #1C1917;
+    --muted: #6B645A;
+    --accent: #F97316;
+    --accent-dark: #EA580C;
+    --accent-soft: #FFF1E6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent-dark); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1020px; margin: 0 auto; padding: 0 24px; }
+
+  /* Header */
+  header { padding: 20px 0; }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; }
+  .logo { display: flex; align-items: center; gap: 10px; font-size: 21px; font-weight: 800; letter-spacing: -0.02em; color: var(--text); }
+  .logo .mark {
+    width: 36px; height: 36px; border-radius: 10px;
+    background: var(--accent); color: #fff;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 19px; font-weight: 700;
+  }
+  .logo em { font-style: normal; color: var(--accent); }
+  nav a { margin-left: 22px; font-size: 15px; font-weight: 600; color: var(--muted); }
+  nav a:hover { color: var(--text); text-decoration: none; }
+
+  /* Hero */
+  .hero { text-align: center; padding: 72px 0 56px; }
+  .hero h1 { font-size: 52px; line-height: 1.12; font-weight: 800; letter-spacing: -0.03em; }
+  .hero h1 em { font-style: normal; color: var(--accent); }
+  .hero p { max-width: 620px; margin: 18px auto 0; font-size: 19px; color: var(--muted); }
+  .badge {
+    display: inline-block; margin-bottom: 18px; padding: 5px 14px;
+    background: var(--accent-soft); color: var(--accent-dark);
+    border: 1px solid #FFD9BE; border-radius: 999px;
+    font-size: 14px; font-weight: 700;
+  }
+  .cta { margin-top: 30px; }
+  .btn {
+    display: inline-block; padding: 15px 34px; border-radius: 12px;
+    background: var(--accent); color: #fff; font-size: 18px; font-weight: 700;
+    border: none; cursor: pointer;
+  }
+  .btn:hover { background: var(--accent-dark); text-decoration: none; }
+  .hero .note { margin-top: 14px; font-size: 14px; color: var(--muted); }
+
+  /* Sections */
+  section { padding: 44px 0; }
+  section h2 { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; text-align: center; }
+  section .sub { text-align: center; color: var(--muted); max-width: 620px; margin: 8px auto 0; }
+
+  /* Features */
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 32px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 22px;
+  }
+  .card h3 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+  .card p { font-size: 15px; color: var(--muted); }
+
+  /* Steps */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 32px; }
+  .step { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px; }
+  .step .num {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--accent); color: #fff; font-weight: 800;
+    display: inline-flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .step h3 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+  .step p { font-size: 15px; color: var(--muted); }
+
+  /* Install */
+  .panel { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px 32px; margin-top: 32px; }
+  .panel ol { margin-left: 20px; }
+  .panel li { margin-bottom: 10px; }
+  .panel li:last-child { margin-bottom: 0; }
+  .panel code { background: #F5F0E6; border: 1px solid var(--border); border-radius: 6px; padding: 1px 7px; font-size: 14px; }
+  .panel h3 { font-size: 18px; margin: 22px 0 8px; }
+  .panel h3:first-child { margin-top: 0; }
+  .panel ul { margin-left: 20px; }
+  .panel ul li { margin-bottom: 6px; }
+
+  /* Pricing */
+  .price-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 32px; }
+  .price { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; text-align: center; }
+  .price.highlight { border: 2px solid var(--accent); }
+  .price .amount { font-size: 40px; font-weight: 800; letter-spacing: -0.02em; }
+  .price .amount span { font-size: 17px; font-weight: 600; color: var(--muted); }
+  .price h3 { font-size: 19px; font-weight: 700; margin-bottom: 6px; }
+  .price p { font-size: 15px; color: var(--muted); }
+
+  /* Footer */
+  footer { border-top: 1px solid var(--border); padding: 32px 0 40px; margin-top: 20px; text-align: center; color: var(--muted); font-size: 15px; }
+  footer a { color: var(--text); font-weight: 600; margin: 0 10px; }
+
+  @media (max-width: 760px) {
+    .hero h1 { font-size: 36px; }
+    .grid, .steps, .price-grid { grid-template-columns: 1fr; }
+    nav a { margin-left: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo"><span class="mark">&#9986;</span> Rohme <em>Clipping</em></div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#download">Download</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <span class="badge">v2.0.14 &middot; Free during launch</span>
+    <h1>Turn live streams into <em>Shorts</em>, automatically.</h1>
+    <p>Paste a link, go live, or upload a video — Rohme Clipping finds the best moments, cuts them in sharp 2K, and uploads them to YouTube on schedule. You just play.</p>
+    <div class="cta">
+      <a class="btn" href="https://drive.google.com/file/d/1APDTBYrDNfBwHrc09JbK6YEnEQ6BDrDg/view?usp=drivesdk">Download for Windows</a>
+    </div>
+    <p class="note">Windows 10 / 11 &middot; Free during launch &middot; No card required</p>
+  </div>
+
+  <section id="features">
+    <h2>Everything you need to clip and post</h2>
+    <p class="sub">Built for streamers who want the best moments out, fast — without editing every clip by hand.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>AI picks the best moments</h3>
+        <p>Every moment is scored for loudness and motion. Only the best clips (score 85+) auto-upload — quiet menus and title screens never make the cut.</p>
+      </div>
+      <div class="card">
+        <h3>2K Shorts, GPU-fast</h3>
+        <p>Crisp 1440&times;2560 vertical clips with NVIDIA NVENC encoding, and an automatic CPU fallback when no GPU is available.</p>
+      </div>
+      <div class="card">
+        <h3>Captions and hook title</h3>
+        <p>Burned-in captions and a hook title card on every Short, so the moment lands even with the sound off.</p>
+      </div>
+      <div class="card">
+        <h3>Facecam picture-in-picture</h3>
+        <p>Facecam at the top, bottom, or off — with a configurable facecam box that matches your OBS layout exactly.</p>
+      </div>
+      <div class="card">
+        <h3>Long videos too</h3>
+        <p>16:9 long clips (3, 5 or 10 minutes, or a custom length) cut from the same live or video.</p>
+      </div>
+      <div class="card">
+        <h3>Auto-upload on schedule</h3>
+        <p>Clips post to YouTube at your peak slots (7 AM, 3 PM, 7 PM) with a pace limit, so your channel never floods.</p>
+      </div>
+      <div class="card">
+        <h3>Multi-channel and mirror</h3>
+        <p>Up to 3 creators in one app. The best clips mirror automatically from one channel to another, such as Gaming to Reels.</p>
+      </div>
+      <div class="card">
+        <h3>Smart lists</h3>
+        <p>Duplicate-live warning, clips grouped by live, global search, link history, and Undo/Redo for deletes.</p>
+      </div>
+      <div class="card">
+        <h3>Make it yours</h3>
+        <p>Grid or list view, hide and reorder tabs, custom fonts, text styles, borders and animations — plus themes.</p>
+      </div>
+      <div class="card">
+        <h3>Always up to date</h3>
+        <p>A built-in update check tells you when a new version is ready, right inside the app.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2>How it works</h2>
+    <p class="sub">Three steps. No editing timeline, no manual scrubbing.</p>
+    <div class="steps">
+      <div class="step">
+        <span class="num">1</span>
+        <h3>Paste a link</h3>
+        <p>Drop in a YouTube, Twitch or Kick link, or upload a video file. Lives are clipped automatically while they run.</p>
+      </div>
+      <div class="step">
+        <span class="num">2</span>
+        <h3>AI finds the best moments</h3>
+        <p>Each moment is scored and ranked. You get the best clips, ready to review, trim and post.</p>
+      </div>
+      <div class="step">
+        <span class="num">3</span>
+        <h3>Auto-upload on schedule</h3>
+        <p>The best clips upload to YouTube at your peak slots — or queue them and post exactly when you choose.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="download">
+    <h2>Download and install</h2>
+    <p class="sub">One file, a few clicks, and you are clipping.</p>
+    <div class="panel">
+      <h3>Install</h3>
+      <ol>
+        <li>Download the Setup file and double-click it, then click Next a few times. Updating? Run the new Setup over your existing install — your clips, logins and settings are kept.</li>
+        <li>On the first run, Python, FFmpeg and yt-dlp install automatically if they are missing.</li>
+        <li>Your browser opens at <code>127.0.0.1:8899</code>. Paste a link and tap <strong>Make clips</strong>.</li>
+        <li>Optional: connect YouTube once in Settings &rarr; YouTube for auto-upload, and add a free Gemini API key in Settings &rarr; AI Gemini for AI-written titles.</li>
+      </ol>
+      <h3>Requirements</h3>
+      <ul>
+        <li>Windows 10 or 11 PC</li>
+        <li>Internet connection</li>
+        <li>Python, FFmpeg and yt-dlp — installed automatically on first run if missing</li>
+        <li>Optional: a YouTube channel with a one-time Google Cloud OAuth setup, for auto-upload</li>
+        <li>Optional: a free Gemini API key from Google AI Studio, for AI titles</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Simple pricing</h2>
+    <p class="sub">Start free. Pay later, only if you keep using it.</p>
+    <div class="price-grid">
+      <div class="price highlight">
+        <h3>Launch</h3>
+        <div class="amount">Free</div>
+        <p>Every feature, free during launch. No card required.</p>
+      </div>
+      <div class="price">
+        <h3>Monthly</h3>
+        <div class="amount">&#8377;99 <span>/ month</span></div>
+        <p>Coming soon. One plan, everything included.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>Questions, answered</h2>
+    <p class="sub">The things streamers ask before they start.</p>
+    <div class="panel">
+      <h3>Is Rohme Clipping free?</h3>
+      <p>Yes — every feature is free during launch, with no card required. A ₹99/month plan is coming soon.</p>
+      <h3>What can it clip?</h3>
+      <p>YouTube live streams and videos, past lives, and video files you upload. Age-restricted videos work once your signed-in YouTube cookies are added in Settings.</p>
+      <h3>Does it upload to YouTube by itself?</h3>
+      <p>Yes — the best clips (score 85+) auto-upload at your peak slots, with a pace limit so your channel never floods.</p>
+    </div>
+  </section>
+
+</main>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Is Rohme Clipping free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — every feature is free during launch, with no card required. A ₹99/month plan is coming soon." } },
+    { "@type": "Question", "name": "What can it clip?", "acceptedAnswer": { "@type": "Answer", "text": "YouTube live streams and videos, past lives, and video files you upload. Age-restricted videos work once your signed-in YouTube cookies are added in Settings." } },
+    { "@type": "Question", "name": "Does it upload to YouTube by itself?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — the best clips (score 85+) auto-upload at your peak slots, with a pace limit so your channel never floods." } }
+  ]
+}
+</script>
+
+<footer>
+  <div class="wrap">
+    <p>Made by <strong>Rohme Gaming</strong></p>
+    <p style="margin-top: 8px;">
+      <a href="https://www.youtube.com/@RohmeGaming">YouTube</a>
+      <a href="https://www.instagram.com/rohmegaming/">Instagram</a>
+    </p>
+    <p style="margin-top: 8px;">Contact: <a href="mailto:gagangaming25@gmail.com">gagangaming25@gmail.com</a></p>
+    <p style="margin-top: 8px; font-size: 14px;">Rohme Clipping v2.0.14</p>
+  </div>
+</footer>
+
+</body>
+</html>
