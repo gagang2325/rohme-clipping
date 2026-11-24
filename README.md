@@ -12,7 +12,7 @@ Get the latest Windows release here:
 
 https://drive.google.com/file/d/1APDTBYrDNfBwHrc09JbK6YEnEQ6BDrDg/view?usp=drivesdk
 
-Current version: **v2.0.14**
+Current version: **v2.0.16**
 
 ## Install
 
