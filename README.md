@@ -10,9 +10,9 @@ Paste a YouTube, Twitch or Kick link, go live, or upload a video file. Rohme Cli
 
 Get the latest Windows release here:
 
-https://drive.google.com/file/d/1r-RtSNgcym0U-VE5tX9zJxqvF0EI8CkR/view?usp=drivesdk
+https://drive.google.com/file/d/14WEqzWDJ_T2jhkKjfvwo-s3aM5LY7ysq/view?usp=drivesdk
 
-Current version: **v2.0.16**
+Current version: **v2.0.25**
 
 ## Install
 
